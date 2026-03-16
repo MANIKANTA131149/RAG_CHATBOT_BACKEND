@@ -5,7 +5,7 @@ from app.database import create_tables
 from dotenv import load_dotenv
 load_dotenv()
 
-app = FastAPI(title="Multi-User RAG API", version="1.0.0")
+app = FastAPI(title="Multi-User RAG API using Pinecone API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
