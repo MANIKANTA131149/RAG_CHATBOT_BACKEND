@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+
+#You can create a Index in Pinecone UI
 INDEX_NAME = os.getenv("PINECONE_INDEX_NAME", "rag-index")
 
 if INDEX_NAME not in pc.list_indexes().names():
