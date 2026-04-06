@@ -25,6 +25,7 @@ if INDEX_NAME not in pc.list_indexes().names():
     )
     print(f"✓ Index '{INDEX_NAME}' created")
 else:
+    #if index exists already it won't create again
     print(f"Index '{INDEX_NAME}' already exists")
 
 info = pc.describe_index(INDEX_NAME)
