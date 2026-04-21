@@ -38,6 +38,7 @@ backend/
 git clone https://github.com/your-username/your-repo.git
 cd backend
 ```
+clone with exact url from github
 
 ### 2. Create virtual environment
 ```bash
